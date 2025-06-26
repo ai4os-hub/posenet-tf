@@ -77,17 +77,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/ai4os-posenet-tf.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/posenetclas.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/ai4os-posenet-tf.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/posenetclas.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/ai4os-posenet-tf"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/ai4os-posenet-tf"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/posenetclas"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/posenetclas"
 	@echo "# devhelp"
 
 epub:

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# ai4os-posenet-tf documentation build configuration file, created by
+# DEEP-OC-image-classification documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ai4os-posenet-tf'
+project = u'DEEP-OC-image-classification'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ai4os_posenet_tf_doc'
+htmlhelp_basename = 'posenetclasdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -184,9 +184,9 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
     ('index',
-     'ai4os_posenet_tf.tex',
-     u'ai4os-posenet-tf Documentation',
-     u"Lara Lloret (CSIC)", 'manual'),
+     'posenetclas.tex',
+     u'DEEP-OC-speech-to-text-tf on Documentation',
+     u"Lara Lloret Iglesias (CSIC)", 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -215,8 +215,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ai4os_posenet_tf', u'ai4os-posenet-tf Documentation',
-     [u"Lara Lloret (CSIC)"], 1)
+    ('index', 'posenetclas', u'DEEP-OC-image-classification Documentation',
+     [u"Lara Lloret Iglesias (CSIC)"], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -229,9 +229,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'ai4os_posenet_tf', u'ai4os-posenet-tf Documentation',
-     u"Lara Lloret (CSIC)", 'ai4os-posenet-tf',
-     'This is a plug-and-play tool to predict human poses in images.', 'Miscellaneous'),
+    ('index', 'posenetclas', u'DEEP-OC-speech-to-text-tf Documentation',
+     u"Lara Lloret Iglesias (CSIC)", 'DEEP-OC-speech-to-text-tf',
+     'This is a plug-and-play tool to train and evaluate a speech to text model using deep neural networks.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

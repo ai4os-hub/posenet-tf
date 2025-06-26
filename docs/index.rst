@@ -1,9 +1,9 @@
-.. ai4os-posenet-tf documentation master file, created by
+.. DEEP-OC-image-classification documentation master file, created by
    sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ai4os-posenet-tf documentation!
+DEEP-OC-image-classification documentation!
 ==============================================
 
 Contents:

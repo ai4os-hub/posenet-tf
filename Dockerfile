@@ -101,8 +101,8 @@ RUN apt-get update && \
     apt-get install -y libsm6 libxext6 libxrender-dev
 
 # Install user app:
-RUN git clone -b $branch https://github.com/ai4os-hub/ai4os-posenet-tf.git && \
-    cd ai4os-posenet-tf && \
+RUN git clone -b $branch https://github.com/ai4os-hub/posenet-tf.git && \
+    cd posenet-tf && \
     pip install --no-cache-dir -e . && \
     rm -rf /root/.cache/pip/* && \
     rm -rf /tmp/* && \
@@ -118,4 +118,4 @@ EXPOSE 6006
 EXPOSE 8888
 
 # Account for OpenWisk functionality (deepaas >=0.4.0) + proper docker stop
-CMD ["deepaas-run", "--openwhisk-detect", "--listen-ip", "0.0.0.0", "--listen-port", "5000"]
+CMD ["deepaas-run","--listen-ip", "0.0.0.0", "--listen-port", "5000"]

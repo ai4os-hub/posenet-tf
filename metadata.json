@@ -1,8 +1,8 @@
 {
-    "title": "ai4os-posenet-tf",
+    "title": "posenet-tf",
     "summary": "This is a plug-and-play tool to predict human poses in images.",
     "description": [
-        "ai4os-posenet-tf is an application using the DEEPaaS API.\n",
+        "posenet-tf is an application using the DEEPaaS API.\n",
         "This is a plug-and-play tool to predict human poses in images."
     ],
     "keywords": [
@@ -12,14 +12,14 @@
     "license": "MIT",
     "date_creation": "2025-06-12",
     "sources": {
-        "dockerfile_repo": "https://github.com/ai4os-hub/ai4os-posenet-tf",
-        "docker_registry_repo": " https://hub.docker.com/u/ai4oshub/ai4os-posenet-tf",
-        "code": "https://github.com/ai4os-hub/ai4os-posenet-tf",
+        "dockerfile_repo": "https://github.com/ai4os-hub/posenet-tf",
+        "docker_registry_repo": " https://hub.docker.com/u/ai4oshub/posenet-tf",
+        "code": "https://github.com/ai4os-hub/posenet-tf",
         "ai4_template": "ai4-template-adv/2.1.0"
     },
     "continuous_integration": {
-        "build_status_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/ai4os-posenet-tf/main",
-        "build_status_url": "https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/ai4os-posenet-tf/job/main/"
+        "build_status_badge": "https://jenkins.services.ai4os.eu/buildStatus/icon?job=AI4OS-hub/posenet-tf/main",
+        "build_status_url": "https://jenkins.services.ai4os.eu/job/AI4OS-hub/job/posenet-tf/job/main/"
     },
     "tosca": [
         {

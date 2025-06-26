@@ -12,7 +12,7 @@ ENV CONTAINER_VERSION "0.1"
 ENV CONTAINER_DESCRIPTION "DEEP as a Service Container: Posenet"
 
 # What user branch to clone (!)
-ARG branch=master
+ARG branch=main
 # If to install JupyterLab
 ARG jlab=true
 # Oneclient version
@@ -101,8 +101,8 @@ RUN apt-get update && \
     apt-get install -y libsm6 libxext6 libxrender-dev
 
 # Install user app:
-RUN git clone -b $branch https://github.com/deephdc/posenet-tf && \
-    cd posenet-tf && \
+RUN git clone -b $branch https://github.com/ai4os-hub/ai4os-posenet-tf.git && \
+    cd ai4os-posenet-tf && \
     pip install --no-cache-dir -e . && \
     rm -rf /root/.cache/pip/* && \
     rm -rf /tmp/* && \

@@ -1,6 +1,7 @@
 #!/usr/bin/groovy
 
-@Library(['github.com/indigo-dc/jenkins-pipeline-library@release/1.4.0']) _
+@Library(['github.com/indigo-dc/jenkins-pipeline-library@release/2.1.1']) _
+
 
 def job_result_url = ''
 

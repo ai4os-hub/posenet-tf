@@ -4,6 +4,8 @@ import shutil
 
 import cv2
 import numpy as np
+import tempfile
+
 
 from posenetclas.constants import CONNECTED_PART_INDICES
 
@@ -11,7 +13,7 @@ from posenetclas.constants import CONNECTED_PART_INDICES
 def create_tmp_folder(name=None):
     if name is None:
         name = datetime.now().strftime("%Y-%m-%d %H:%M:%S-%f")
-    dir_path = os.path.join("/tmp", name)
+    dir_path =  os.path.join(tempfile.gettempdir(), name)
 
     if os.path.isdir(dir_path):
         shutil.rmtree(dir_path)

@@ -5,3 +5,4 @@ pytest-mock
 pytest-env
 flake8
 bandit
+tensorflow==1.14

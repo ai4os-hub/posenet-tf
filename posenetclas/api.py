@@ -49,7 +49,7 @@ def catch_url_error(url_list):
         ):  # don't do the checks for base64 encoded images
             # Error catch: Inexistent url
             try:
-                url_type = requests.head(i).headers.get(
+                url_type = requests.head(i, timeout=20).headers.get(
                     "content-type"
                 )
             except Exception:
@@ -118,6 +118,7 @@ def predict_url(args):
     filepaths = []
     for url in args["urls"]:
         tmp_path = os.path.join(dir_path, os.path.basename(url))
+     
         urllib.request.urlretrieve(url, tmp_path)
         filepaths.append(tmp_path)
 

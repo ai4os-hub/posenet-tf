@@ -13,8 +13,7 @@ import tempfile
 
 import pytest
 
-import api
-
+from posenetclas import api
 
 @pytest.fixture(scope="session", autouse=True)
 def original_datapath():

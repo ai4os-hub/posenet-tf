@@ -91,7 +91,7 @@ def test_curl_load():
 
     r = subprocess.run(
         'curl -X GET "http://0.0.0.0:5000/v2/models/" -H "accept: application/json"',
-        shell=True,
+        shell=False,
         check=True,
         stdout=subprocess.PIPE,
     ).stdout
@@ -108,7 +108,7 @@ def test_curl_metadata():
         'curl -X GET "http://0.0.0.0:5000/v2/models/{}/" -H "accept: application/json"'.format(
             module_name
         ),
-        shell=True,
+        shell=False,
         check=True,
         stdout=subprocess.PIPE,
     ).stdout
@@ -131,7 +131,7 @@ def test_curl_predict_url():
             'curl -X POST "http://0.0.0.0:5000/v2/models/{}/predict/?urls={}" -H "accept: {}"'.format(
                 module_name, quote_plus(test_url), content_type
             ),
-            shell=True,
+            shell=False,
             check=True,
             stdout=subprocess.PIPE,
         ).stdout
@@ -164,5 +164,5 @@ if __name__ == "__main__":
     test_curl_predict_url()
     r = subprocess.run(
         "kill $(ps aux | grep 'deepaas-run' | awk '{print $2}')",
-        shell=True,
+        shell=False,
     )  # kill deepaas

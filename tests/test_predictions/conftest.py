@@ -41,7 +41,7 @@ number of tests generated can grow exponentially.
 import pytest
 from deepaas.model.v2.wrapper import UploadedFile
 
-import api
+from posenetclas import api
 
 
 @pytest.fixture(scope="module", params=["t100-images.npy"])

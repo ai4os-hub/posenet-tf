@@ -28,7 +28,7 @@ def test_authors(metadata):
 def test_emails(metadata):
     """Tests that metadata provides authors information."""
     assert "author-email" in metadata
-    email_author = ", ".join(metadata['author-email'])
+    email_author = ", ".join(metadata["author-email"])
     assert email_author == "Lara Lloret (CSIC)"
     email_values = ", ".join(metadata["author-email"].values())
     assert email_values == "lloret@ifca.unican.es"
@@ -37,7 +37,10 @@ def test_emails(metadata):
 def test_description(metadata):
     """Tests that metadata provides description information."""
     assert "description" in metadata
-    assert "This is a plug-and-play tool to predict human poses in images." in metadata["description"]
+    assert (
+        "This is a plug-and-play tool to predict human poses in images."
+        in metadata["description"]
+    )
 
 
 def test_license(metadata):

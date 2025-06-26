@@ -14,8 +14,8 @@ dates:
   created: '2019-07-31'
   updated: '2024-10-09'
 links:
-  source_code: https://github.com/deephdc/posenet-tf
-  docker_image: deephdc/deep-oc-posenet-tf
+  source_code: https://github.com/ai4os-hub/posenet-tf.git
+  docker_image: ai4oshub/posenet-tf
 tags:
   - deep learning
 tasks:

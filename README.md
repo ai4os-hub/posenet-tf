@@ -43,7 +43,7 @@ You can find more information about it in the [DEEP Marketplace](https://marketp
 To start using this framework clone the repo:
 
 ```bash
-git clone https://github.com/deephdc/posenet-tf
+git clone https://github.com/ai4os-hub/posenet-tf
 cd posenet-tf
 pip install -e .
 ```
@@ -55,12 +55,12 @@ and open http://0.0.0.0:5000/ui and look for the methods belonging to the `posen
 
 ### Docker installation
 
-We have also prepared a ready-to-use [Docker container](https://github.com/deephdc/DEEP-OC-posenet-tf) to
+We have also prepared a ready-to-use [Docker container](https://github.com/ai4os-hub/posenet-tf) to
 run this module. To run it:
 
 ```bash
-docker search deephdc
-docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/deep-oc-posenet-tf
+docker search ai4oshub
+docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 ai4oshub/posenet-tf
 ```
 
 Now open http://0.0.0.0:5000/ui and look for the methods belonging to the `posenetclas` module.

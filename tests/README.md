@@ -28,7 +28,7 @@ Organize your project to separate the test code from the main codebase.
 A typical structure for an API ML code might look like this:
 
 ```
-ai4os-posenet-tf/
+posenet-tf/
 │
 ├── .sqa
 │   ├── config.yml          <-- Software Quality Assurance configuration

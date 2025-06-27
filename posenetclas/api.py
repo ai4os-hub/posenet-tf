@@ -19,7 +19,9 @@ import urllib.request
 from webargs import fields, validate
 
 from posenetclas import config, test_utils, utils
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 CONF = config.conf_dict()
 
@@ -218,11 +220,15 @@ def get_predict_args():
 
 def get_metadata():
     """
-    Function to read metadata
+    DO NOT REMOVE - All modules should have a get_metadata() function
+    with appropriate keys.
     """
-    module = __name__.split(".", 1)
-    pkg = pkg_resources.get_distribution(module[0])
-    meta = {
+    distros = list(pkg_resources.find_distributions(str(BASE_DIR), only=True))
+    if len(distros) == 0:
+        raise Exception("No package found.")
+    pkg = distros[0]  # if several select first
+
+    meta_fields = {
         "Name": None,
         "Version": None,
         "Summary": None,
@@ -231,17 +237,14 @@ def get_metadata():
         "Author-email": None,
         "License": None,
     }
-
+    meta = {}
     for line in pkg.get_metadata_lines("PKG-INFO"):
-        for par in meta:
-            if line.startswith(par):
+       # line_low = line.lower()  # to avoid inconsistency due to letter cases
+        for k in meta_fields:
+            if line.startswith(k + ":"):
                 _, value = line.split(": ", 1)
-                meta[par] = value
-
-    # Update information with Docker info (provided as 'CONTAINER_*' env variables)
-    r = re.compile("^CONTAINER_(.*?)$")
-    container_vars = list(filter(r.match, list(os.environ)))
-    for var in container_vars:
-        meta[var.capitalize()] = os.getenv(var)
+                meta[k] = value
+    print(meta)            
 
     return meta
+

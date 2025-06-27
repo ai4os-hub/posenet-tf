@@ -8,7 +8,7 @@ description: |-
 
   The  PREDICT method expects an RGB image as input (or the url of an image) and returns  as output the different body keypoints with the corresponding coordinates and the associated key score 
 
-  <img class='fit', src='https://raw.githubusercontent.com/deephdc/DEEP-OC-posenet-tf/master/images/posenet.png'/>
+  <img class='fit', src='https://raw.githubusercontent.com/ai4os-hub/posenet-tf/refs/heads/main/reports/figures/posenet.png'/>
 
 dates:
   created: '2019-07-31'

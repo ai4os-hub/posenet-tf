@@ -1,7 +1,7 @@
 DEEP Open Catalogue: Pose Estimation
 ====================================
 
-[![Build Status](https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/posenet-tf/master)](https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/posenet-tf/job/master/)
+[![Build Status](https://jenkins.cloud.ai4eosc.eu/job/AI4OS-hub/job/posenet-tf/job/main/)](https://jenkins.cloud.ai4eosc.eu/job/AI4OS-hub/job/posenet-tf/job/main/)
 
 
 **Author:** [Lara Lloret Iglesias](https://github.com/laramaktub) (CSIC)

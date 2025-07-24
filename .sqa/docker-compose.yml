@@ -2,10 +2,16 @@ version: "3.6"
 
 services:
   testing:
-    container_name: testing
+  # image: "indigodatacloud/ci-images:python3.6"
+    container_name: "${BUILD_TAG}"
+    hostname: "${BUILD_TAG}"
     working_dir: /srv
     build:
       context: ./.sqa
+      dockerfile: dockerfile
+    command: >
+      sh -c "git config --global --add safe.directory /srv &&
+             tail -f /dev/null"
     volumes:
       - type: bind
         source: ./

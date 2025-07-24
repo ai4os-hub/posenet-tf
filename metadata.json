@@ -13,8 +13,8 @@
     "date_creation": "2025-06-12",
     "sources": {
         "dockerfile_repo": "https://github.com/ai4os-hub/posenet-tf",
-        "docker_registry_repo": " https://hub.docker.com/u/ai4oshub/posenet-tf",
-        "code": "https://github.com/ai4os-hub/posenet-tf",
+        "docker_registry_repo": " ai4oshub/posenet-tf",
+        "code": "https://github.cai4os-hub/posenet-tf",
         "ai4_template": "ai4-template-adv/2.1.0"
     },
     "continuous_integration": {

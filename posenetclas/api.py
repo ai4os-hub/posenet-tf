@@ -87,8 +87,8 @@ def catch_localfile_error(file_list):
 
 
 def warm():
-   # test_utils.load_predict_model()
- return 
+    test_utils.load_predict_model()
+# return 
 
 # @catch_error
 def predict(**args):

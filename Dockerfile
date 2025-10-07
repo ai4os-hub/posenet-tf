@@ -119,5 +119,5 @@ EXPOSE 8888
 
 # Account for OpenWisk functionality (deepaas >=0.4.0) + proper docker stop
 CMD ["deepaas-run","--listen-ip", "0.0.0.0", "--listen-port", "5000"]
-HEALTHCHECK --interval=5s --timeout=3s --start-period=10s --retries=5 \
+HEALTHCHECK --interval=10s --timeout=3s --start-period=10s --retries=5 \
   CMD curl --fail http://localhost:5000/v2
